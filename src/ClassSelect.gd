@@ -12,4 +12,5 @@ func _ready():
 		if class_data.has("icon_path"):
 			button.icon = load(class_data.icon_path)
 		button.disabled = not class_data.has("front_path")
+		button.class_ref = class_ref
 		Grid.add_child(button)

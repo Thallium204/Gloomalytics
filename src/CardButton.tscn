@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Class Cards/09 Circles/atlas.tres" type="Texture" id=1]
+
+
+[node name="Button" type="TextureButton"]
+margin_bottom = 1042.0
+texture_normal = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

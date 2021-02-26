@@ -5,7 +5,6 @@ var classes_data = {}
 
 func _init():
 	get_classes_data()
-	#save_data()
 
 
 func set_active_class(button_text):
