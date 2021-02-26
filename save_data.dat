@@ -1,0 +1,101 @@
+{
+
+    "01 Brute":{
+        "icon_path":"res://Class Cards/01 Brute/01 Brute.png",
+        "name":"Brute"
+    },
+
+    "02 Tinkerer":{
+        "icon_path":"res://Class Cards/02 Tinkerer/02 Tinkerer.png",
+        "name":"Tinkerer"
+    },
+
+    "03 Spellweaver":{
+        "back_path":"res://Class Cards/03 Spellweaver/master-back.png",
+        "front_path":"res://Class Cards/03 Spellweaver/master-front.png",
+        "icon_path":"res://Class Cards/03 Spellweaver/03 Spellweaver.png",
+        "name":"Spellweaver"
+    },
+
+    "04 Scoundrel":{
+        "icon_path":"res://Class Cards/04 Scoundrel/04 Scoundrel.png",
+        "name":"Scoundrel"
+    },
+
+    "05 Cragheart":{
+        "icon_path":"res://Class Cards/05 Cragheart/05 Cragheart.png",
+        "name":"Cragheart"
+    },
+
+    "06 Mindthief":{
+        "icon_path":"res://Class Cards/06 Mindthief/06 Mindthief.png",
+        "name":"Mindthief"
+    },
+
+    "07 Sun":{
+        "back_path":"res://Class Cards/07 Sun/master-back.png",
+        "front_path":"res://Class Cards/07 Sun/master-front.png",
+        "icon_path":"res://Class Cards/07 Sun/07 Sun.png",
+        "name":"Sun"
+    },
+
+    "08 Three Spears":{
+        "icon_path":"res://Class Cards/08 Three Spears/08 Three Spears.png",
+        "name":"Three Spears"
+    },
+
+    "09 Circles":{
+        "back_path":"res://Class Cards/09 Circles/master-back.png",
+        "front_path":"res://Class Cards/09 Circles/master-front.png",
+        "icon_path":"res://Class Cards/09 Circles/09 Circles.png",
+        "name":"Circles"
+    },
+
+    "10 Eclipse":{
+        "icon_path":"res://Class Cards/10 Eclipse/10 Eclipse.png",
+        "name":"Eclipse"
+    },
+
+    "11 Squidface":{
+        "icon_path":"res://Class Cards/11 Squidface/11 Squidface.png",
+        "name":"Squidface"
+    },
+
+    "12 Lightning":{
+        "icon_path":"res://Class Cards/12 Lightning/12 Lightning.png",
+        "name":"Lightning"
+    },
+
+    "13 Music Note":{
+        "icon_path":"res://Class Cards/13 Music Note/13 Music Note.png",
+        "name":"Music Note"
+    },
+
+    "14 Angry Face":{
+        "icon_path":"res://Class Cards/14 Angry Face/14 Angry Face.png",
+        "name":"Angry Face"
+    },
+
+    "15 Saw":{
+        "icon_path":"res://Class Cards/15 Saw/15 Saw.png",
+        "name":"Saw"
+    },
+
+    "16 Triangles":{
+        "icon_path":"res://Class Cards/16 Triangles/16 Triangles.png",
+        "name":"Triangles"
+    },
+
+    "17 Two-mini":{
+        "back_path":"res://Class Cards/17 Two-mini/master-back.png",
+        "front_path":"res://Class Cards/17 Two-mini/master-front.png",
+        "icon_path":"res://Class Cards/17 Two-mini/17 Two-mini.png",
+        "name":"Two-mini"
+    },
+
+    "18 Diviner":{
+        "icon_path":"res://Class Cards/18 Diviner/18 Diviner.png",
+        "name":"Diviner"
+    }
+
+}
