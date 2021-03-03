@@ -12,7 +12,7 @@ uniform vec4 color_dark:hint_color;
 vec4 apply_color(vec2 uv, vec4 color) {
 	
 	vec4 color_mix = vec4(1.0);
-	float value_mix = 2.0 * (uv.x - center.x) * (card_uv.x - center.x);
+	float value_mix = 1.0 * (uv.x - center.x) * (card_uv.x - center.x);
 	
 	if (value_mix >= 0.0) { // if mouse is on our uv side
 		color_mix = color_light;
@@ -28,8 +28,9 @@ vec2 apply_transform(vec2 uv) {
 	
 	vec2 trans_uv = uv;
 	float value_mix = 2.0 * (uv.x - center.x) * (card_uv.x - center.x);
-	float disp_mod = center_mod + center_gap * value_mix;
-	trans_uv = (trans_uv - center) / disp_mod + center;
+	float disp_mod_y = center_mod + center_gap * value_mix;
+	float disp_mod_x = center_mod - center_gap * pow(abs(value_mix),2.0);
+	trans_uv = (trans_uv - center) / vec2(disp_mod_x,disp_mod_y) + center;
 	return trans_uv;
 }
 

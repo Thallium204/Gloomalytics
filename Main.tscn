@@ -1,6 +1,5 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://src/Background.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Font/PirataOne-Gloomhaven.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://Resources/Theme.tres" type="Theme" id=3]
 [ext_resource path="res://src/Main.gd" type="Script" id=5]
@@ -17,8 +16,6 @@ script = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="Background" parent="." instance=ExtResource( 1 )]
 
 [node name="Title" type="Label" parent="."]
 anchor_right = 1.0
@@ -45,22 +42,28 @@ __meta__ = {
 }
 
 [node name="ButtonCardViewer" type="Button" parent="VBoxContainer"]
-margin_top = 275.0
+margin_top = 174.0
 margin_right = 980.0
-margin_bottom = 473.753
+margin_bottom = 372.753
 text = "Card Viewer"
 
 [node name="ButtonCardCreator" type="Button" parent="VBoxContainer"]
-margin_top = 477.0
+margin_top = 376.0
 margin_right = 980.0
-margin_bottom = 675.753
+margin_bottom = 574.753
 disabled = true
 text = "Card Creator"
 
-[node name="ButtonScan" type="Button" parent="VBoxContainer"]
-margin_top = 679.0
+[node name="ButtonDeckBuilder" type="Button" parent="VBoxContainer"]
+margin_top = 578.0
 margin_right = 980.0
-margin_bottom = 877.753
-text = "Scan"
+margin_bottom = 776.753
+text = "Deck Builder"
+
+[node name="ButtonCardData" type="Button" parent="VBoxContainer"]
+margin_top = 780.0
+margin_right = 980.0
+margin_bottom = 978.753
+text = "Card Data"
 [connection signal="button_up" from="VBoxContainer/ButtonCardViewer" to="." method="_on_ButtonCardViewer_button_up"]
-[connection signal="button_up" from="VBoxContainer/ButtonScan" to="." method="_on_ButtonScan_button_up"]
+[connection signal="button_up" from="VBoxContainer/ButtonCardData" to="." method="_on_ButtonCardData_button_up"]

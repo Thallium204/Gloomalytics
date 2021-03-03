@@ -1,15 +1,14 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://CardSelector.gd" type="Script" id=1]
+[ext_resource path="res://CardData.gd" type="Script" id=1]
 [ext_resource path="res://Font/PirataOne-Gloomhaven.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://Resources/Theme.tres" type="Theme" id=3]
-[ext_resource path="res://temp_grid.gd" type="Script" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 200
 font_data = ExtResource( 2 )
 
-[node name="CardSelector" type="Control"]
+[node name="CardData" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 mouse_filter = 2
@@ -24,7 +23,7 @@ anchor_right = 1.0
 anchor_bottom = 0.15
 custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0.376471, 0.364706, 0.352941, 1 )
-text = "Cards"
+text = "Card Data"
 align = 1
 valign = 1
 __meta__ = {
@@ -38,16 +37,21 @@ anchor_right = 1.0
 anchor_bottom = 0.85
 margin_left = 50.0
 margin_right = -50.0
+scroll_horizontal_enabled = false
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="GridContainer" type="GridContainer" parent="ScrollContainer"]
+[node name="GridOption" type="GridContainer" parent="ScrollContainer"]
 margin_right = 980.0
 margin_bottom = 1344.0
+mouse_filter = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-script = ExtResource( 5 )
+columns = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Button" type="Button" parent="."]
 anchor_top = 0.85
@@ -57,6 +61,4 @@ text = "Back"
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="HTTPRequest" type="HTTPRequest" parent="."]
 [connection signal="button_up" from="Button" to="." method="_on_Button_button_up"]

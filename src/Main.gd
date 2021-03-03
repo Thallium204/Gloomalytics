@@ -3,8 +3,8 @@ extends Control
 
 
 func _on_ButtonCardViewer_button_up():
-	get_tree().change_scene("res://ClassSelect.tscn")
+	Transitions.to_class_select()
 
 
-func _on_ButtonScan_button_up():
-	Globals.get_classes_data()
+func _on_ButtonCardData_button_up():
+	Transitions.to_card_data()

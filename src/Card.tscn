@@ -6,9 +6,9 @@
 
 [sub_resource type="ShaderMaterial" id=1]
 shader = ExtResource( 2 )
-shader_param/card_uv = Vector2( 0.5, 0.5 )
+shader_param/card_uv = Vector2( 1, 0.5 )
 shader_param/color_light = Color( 1, 1, 1, 1 )
-shader_param/color_dark = null
+shader_param/color_dark = Color( 0, 0, 0, 1 )
 
 [node name="Card" type="TextureRect"]
 material = SubResource( 1 )
@@ -16,9 +16,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 focus_mode = 2
 size_flags_horizontal = 3
-size_flags_vertical = 3
 texture = ExtResource( 3 )
-expand = true
 stretch_mode = 6
 script = ExtResource( 1 )
 __meta__ = {

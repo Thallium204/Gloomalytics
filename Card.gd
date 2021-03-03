@@ -26,7 +26,7 @@ func _on_Card_gui_input(event):
 	
 	if event is InputEventMouseMotion:
 		
-		mouse_uv = (event.position - rect_position)/rect_size
+		mouse_uv = (rect_position + event.position - rect_position)/rect_size
 
 
 func _physics_process(delta):
