@@ -44,6 +44,7 @@ __meta__ = {
 margin_top = 30.0
 margin_right = 2460.0
 margin_bottom = 228.753
+disabled = true
 text = "Card Viewer"
 
 [node name="ButtonCardCreator" type="Button" parent="VBoxContainer"]
@@ -57,6 +58,7 @@ text = "Card Creator"
 margin_top = 434.0
 margin_right = 2460.0
 margin_bottom = 632.753
+disabled = true
 text = "Deck Builder"
 
 [node name="ButtonCardData" type="Button" parent="VBoxContainer"]
