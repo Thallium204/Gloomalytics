@@ -10,7 +10,6 @@ var mouse_uv = Vector2(0.5,0.5)
 
 func _ready():
 	var tex_size = texture.get_size()
-	var tex_scale = rect_size/tex_size
 	material = material.duplicate()
 	update_material()
 

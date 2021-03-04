@@ -20,7 +20,6 @@ __meta__ = {
 [node name="Title" type="Label" parent="."]
 anchor_right = 1.0
 anchor_bottom = 0.2
-margin_top = 126.0
 custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0.376471, 0.364706, 0.352941, 1 )
 text = "Gloomalysis"
@@ -42,28 +41,28 @@ __meta__ = {
 }
 
 [node name="ButtonCardViewer" type="Button" parent="VBoxContainer"]
-margin_top = 174.0
-margin_right = 980.0
-margin_bottom = 372.753
+margin_top = 30.0
+margin_right = 2460.0
+margin_bottom = 228.753
 text = "Card Viewer"
 
 [node name="ButtonCardCreator" type="Button" parent="VBoxContainer"]
-margin_top = 376.0
-margin_right = 980.0
-margin_bottom = 574.753
+margin_top = 232.0
+margin_right = 2460.0
+margin_bottom = 430.753
 disabled = true
 text = "Card Creator"
 
 [node name="ButtonDeckBuilder" type="Button" parent="VBoxContainer"]
-margin_top = 578.0
-margin_right = 980.0
-margin_bottom = 776.753
+margin_top = 434.0
+margin_right = 2460.0
+margin_bottom = 632.753
 text = "Deck Builder"
 
 [node name="ButtonCardData" type="Button" parent="VBoxContainer"]
-margin_top = 780.0
-margin_right = 980.0
-margin_bottom = 978.753
+margin_top = 636.0
+margin_right = 2460.0
+margin_bottom = 834.753
 text = "Card Data"
 [connection signal="button_up" from="VBoxContainer/ButtonCardViewer" to="." method="_on_ButtonCardViewer_button_up"]
 [connection signal="button_up" from="VBoxContainer/ButtonCardData" to="." method="_on_ButtonCardData_button_up"]
